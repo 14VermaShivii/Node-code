@@ -1,14 +1,14 @@
-const http=require('http')
-const server=http.createServer((req,res)=>{
-    console.log("client request  ",req)          ///client reaqest =at the server
+// const http=require('http')
+// const server=http.createServer((req,res)=>{
+//     console.log("client request  ",req)          ///client reaqest =at the server
     
-    //response the client
-    res.end("welcome to home")         ///welcome to home =at the server
-})
-server.listen(8000,()=>{
-    console.log("server started")
-})
-output: server started
+//     //response the client
+//     res.end("welcome to home")         ///welcome to home =at the server
+// })
+// server.listen(8000,()=>{
+//     console.log("server started")
+// })
+// output: server started
 
 //*****************home page********************** */
 const http=require('http')
@@ -30,4 +30,6 @@ server.listen(8000,()=>{
     console.log("server started")
 })
 
+
+//output = will be on the sever ,there will be  creat home page,about page and contact page
 //************************ */

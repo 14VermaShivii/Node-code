@@ -1,6 +1,8 @@
 const fs =require('fs')
 fs.writeFileSync('./text.txt',"welcome ")
 fs.appendFileSync('./text.txt',` how r u \n`)
+
+//ouput = here is create a new file
 //*******************test file ******************* */
 fs.stat('./test.txt',(err,stats)=>{
     if(err){
@@ -13,6 +15,9 @@ fs.stat('./test.txt',(err,stats)=>{
     console.log(' no files ')
     }
 });
+
+
+//output = File is available
 //*****************----------directory read-----------******************* */
 fs.stat('./node_modules',(err,stats)=>{
 if(err){
@@ -26,7 +31,9 @@ if(stats.isDirectory()){
 }
 });
 
-//******************----file generate---******************* */
+//output = File is available
+
+//******************----file look---******************* */
 fs.stat('./text.txt',(err,stats) => {
     if(err){
         console.log(err)
@@ -61,6 +68,8 @@ fs.copyFile('./text.txt',"./copy.txt",(err)=>{
     const f = fs.readFileSync('./copy.txt','utf-8')  //copy file read
     console.log(f)
 });
+//output=file copied
+// welcome how are you
 
 //*************delete file*********** */
 fs.unlink('./copy.txt',(err)=>{
@@ -70,3 +79,5 @@ fs.unlink('./copy.txt',(err)=>{
     }
     console.log("file delete")
 })
+
+//output:copy file will be delete

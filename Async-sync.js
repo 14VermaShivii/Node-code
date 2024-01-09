@@ -1,11 +1,11 @@
 //**************sync*********************** */
-// const fs=require('fs')
-// console.log("login module")
-// console.log("signup module")
-// const file=fs.readFileSync('./Sample.txt','utf-8')
-// console.log(file)
-// console.log("forgot passwor")
-// console.log("reset password")
+const fs=require('fs')
+console.log("login module")
+console.log("signup module")
+const file=fs.readFileSync('./Sample.txt','utf-8')
+console.log(file)
+console.log("forgot passwor")
+console.log("reset password")
 
 // output:login mosule
 // signup module
